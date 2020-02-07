@@ -1,0 +1,6 @@
+{
+  "files.autoSave": "off",
+  "files.refactoring.autoSave": false,
+  "editor.codeLens": false,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+}

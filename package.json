@@ -1,0 +1,18 @@
+{
+  "name": "tech-interview-vanilla-sandbox",
+  "private": true,
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "live-server --port=8080 --watch='*.html,*.js,*.css'",
+    "start-no-hot-reload": "http-server -o -p 8080",
+    "ngrok": "ngrok http 8080",
+    "node": "node main.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "ngrok": "^4.3.3"
+  }
+}
