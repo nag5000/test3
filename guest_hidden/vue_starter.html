@@ -1,0 +1,24 @@
+<div id="app">
+  <div>{{ message }}</div>
+  <button v-count-clicks>Button</button>
+</div>
+
+<script type="module">
+  import { createApp } from 'https://unpkg.com/vue@3.2.40/dist/vue.esm-browser.js'
+
+  const App = {
+    data() {
+      return { message: 'It works' }
+    },
+    directives: {
+      countClicks: {
+        mounted (el) {
+          el.dataset.clickCount = 0
+          el.addEventListener('click', () => el.dataset.clickCount++)
+        }
+      }
+    }
+  }
+
+  Vue.createApp(App).mount('#app')
+</script>
